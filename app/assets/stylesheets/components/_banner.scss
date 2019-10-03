@@ -4,12 +4,6 @@
   color:white;
 }
 
-  // h1 {
-  // // position: relative;
-  // padding-top:500px;
-  // color: white;
-  // font-size: 40px;
-  // }
 .banner-content {
     display: flex;
     flex-direction: column;
@@ -20,14 +14,10 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("/images/blur-code.jpg");
-  // background-color: pink;
-  // background-image: url("/images/blur-code.jpg");
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1569584783/blur-code_qje9j7");
     background-size: cover;
     height: 94vh;
     width:100vw;
-
-
     display: flex;
     flex-direction: column;
     align-items: center;

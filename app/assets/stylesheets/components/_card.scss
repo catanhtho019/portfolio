@@ -31,3 +31,36 @@
     width: 300px;
   }
 }
+
+.project-card {
+height: 33vh;
+background-color: pink;
+text-align: center;
+font-size: 50px;
+justify-content: center;
+}
+
+.project-card:hover {
+background: #f6b93b;
+border-color: #f6b93b !important;
+transition: all 0.4s ease 0s;
+}
+
+.project-title {
+  color: #3D3830;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  a {
+  text-decoration: none;
+  cursor: pointer;
+  }
+  :hover {
+    color: #ffffff;
+  }
+}
+

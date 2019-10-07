@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '/', to: 'homepage#home', as: 'root'
+  get 'download_pdf', to: "homes#download_pdf"
   get 'projects', to: 'projects#index'
   get 'experiments', to: 'experiments#index'
   get 'about', to: 'pages#about'

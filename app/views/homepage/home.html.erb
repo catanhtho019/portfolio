@@ -5,25 +5,22 @@
   <title>Cat's portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
 </head>
   <body>
     <a onclick="scroll_down()" class="scroll-down">About</a>
     <div class="hero-banner">
       <div class="banner-content">
         <h1>Catherine Nguyen-Cat</h1>
-        <h2>Fullstack Developer</h2>
-        <a href="#" class="CV_download">Download CV</a>
+        <h2>Full-stack Developer</h2>
+        <a href="https://res.cloudinary.com/di2gop0lp/image/upload/v1570455755/Catherine_Nguyen-Cat_CV_syyed9.pdf" target="_blank" class="CV_download">View CV</a>
+
       </div>
     </div>
       <div id="about">
-        <img class="avatar" src="https://res.cloudinary.com/di2gop0lp/image/upload/v1569866093/idyzgkdaqmi6gcfgph65">
+        <img class="avatar" src="https://res.cloudinary.com/di2gop0lp/image/upload/v1570459054/Me_purple_yzymws.png">
         <div class="about-text">
           <h1>Who am I?</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illum veniam commodi officiis corporis numquam ratione aliquam cumque fugit qui sunt sint minima in, aliquid a culpa placeat voluptatem nulla.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illum veniam commodi officiis corporis numquam ratione aliquam cumque fugit qui sunt sint minima in, aliquid a culpa placeat voluptatem nulla.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illum veniam commodi officiis corporis numquam ratione aliquam cumque fugit qui sunt sint minima in, aliquid a culpa placeat voluptatem nulla.</p>
+          <p>Hi, I am Catherine Nguyen-Cat, a London-based developer with a a degree in animation. I spent a few years as a designer before deciding I wanted to transition as a developer. By having someone with both knowledge in design and development helps create a successful user-interface product. I enjoy building web apps from start to finish. </p>
             <div class="skills">
               <h1>Skills</h1>
               <ul>
@@ -46,9 +43,23 @@
             </div>
             <div class="contact">
               <h1>Contact</h1>
-              <a href="#">GitHub</a>
-              <a href="#">LinkedIn</a>
-              <a href="#">Email</a>
+              <ul class="list-inline">
+                <li>
+                  <%= mail_to "nguyencat.catherine@gmail.com" do %>
+                  <i class="far fa-envelope social-media"></i>
+                  <% end %>
+                </li>
+                <li>
+                  <a class="social-media" href="https://www.linkedin.com/in/catherine-nguyen-cat-40b031a3/">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-media"  href="https://www.github.com/catanhtho019/">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
         </div>
       </div>

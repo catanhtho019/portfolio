@@ -62,5 +62,67 @@
   }
 
 .project-preview {
-  width:100%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project-preview:hover .overlay {
+  opacity: 1;
+}
+
+.cocktail_library {
+  background-image: url("https://res.cloudinary.com/di2gop0lp/image/upload/v1570578263/cocktail_library_hautgj.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.venuez {
+  background-image: url("https://res.cloudinary.com/di2gop0lp/image/upload/v1570578258/my_venuez_dvdakr.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.brunchee {
+  background-image: url("https://res.cloudinary.com/di2gop0lp/image/upload/v1570578264/brunchee_uetggw.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.azuredesigns {
+  background-image: url("https://res.cloudinary.com/di2gop0lp/image/upload/v1571096098/Azure_Designs_vj71x0.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.preview-text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+}
+
+.paintings_collection {
+  display: inline-block;
+  img {
+    height: 70vh;
+  }
+
 }

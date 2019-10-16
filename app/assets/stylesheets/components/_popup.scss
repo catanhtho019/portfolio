@@ -92,7 +92,7 @@
 }
 
 .azuredesigns {
-  background-image: url("https://res.cloudinary.com/di2gop0lp/image/upload/v1571096098/Azure_Designs_vj71x0.png");
+  background-image: url("https://res.cloudinary.com/di2gop0lp/image/upload/v1571194128/azuredesign_cgmf2c.png");
   background-size: cover;
   background-position: center;
 }
@@ -125,4 +125,13 @@
     height: 70vh;
   }
 
+}
+
+.azure-designs {
+  display: block;
+  text-align: center;
+  img {
+    padding: 30px;
+    width: 55vw;
+  }
 }

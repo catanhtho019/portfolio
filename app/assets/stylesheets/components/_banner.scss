@@ -5,10 +5,10 @@
 }
 
 .banner-content {
+    // position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background:
     linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -18,17 +18,154 @@
     background-size: cover;
     height: 94vh;
     width:100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+
     h1 {
       font-size: 80px;
       margin-block-end: 0px;
     }
     h2 {
       opacity: 0.7;
-      font-size: 40px;
+      font-size: 35px;
     }
 }
 
+.css-typing {
+  background-color: black;
+  border-radius: 5px;
+  opacity: 0.7;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.css-typing h1 {
+  border-right: .1em solid white;
+  font-family: "Courier";
+  font-size: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing h1:nth-child(1) {
+  width: 100%;
+  -webkit-animation: type 2s steps(20, end);
+  animation: type 2s steps(20, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing h1:nth-child(2) {
+  width: 100%;
+  margin-top: 20px;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(20, end);
+  animation: type2 2s steps(20, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing h1:nth-child(3) {
+  font-size:35px;
+  width: 100%;
+  opacity: 0;
+  -webkit-animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
+  animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  margin-bottom: 40px;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .1em solid white;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .1em solid white;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .1em solid white;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .1em solid white;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}

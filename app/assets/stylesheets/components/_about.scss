@@ -1,3 +1,14 @@
+#about {
+  font-family: "Courier";
+  height:100vh;
+}
+
+  @media (max-width: 540px) {
+    #about {
+      height: 100vh;
+    }
+  }
+
 .about-text {
   color: #40677c;
   text-align: center;
@@ -15,7 +26,8 @@
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-  padding: 50px;
+  padding-top: 30px;
+  // padding: 20px;
 }
 
 .skills {
@@ -59,6 +71,3 @@
     max-width: 800px;
 }
 
-.contact {
-  padding: 20px;
-}

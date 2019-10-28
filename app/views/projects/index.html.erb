@@ -1,25 +1,29 @@
+<div class="project-cards">
+  <!-- <div class="cards-overlay"> -->
   <div class="project-card">
     <div class="project-title">
-      <a id="myBtn01">Le Wagon</a>
-    </div>
-  </div>
-  <div class="project-card" style="background-color: #f1c9ff;">
-    <div class="project-title">
-      <a id="myBtn02">Jocelyn Burton</a>
+      <a id="myBtn01" onclick="popup()">Le Wagon</a>
     </div>
   </div>
   <div class="project-card">
     <div class="project-title">
-      <a id="myBtn03">Azure Designs</a>
+      <a id="myBtn02" onclick="popup02()">Jocelyn Burton</a>
     </div>
   </div>
 
+  <div class="project-card">
+    <div class="project-title">
+      <a id="myBtn03" onclick="popup03()">Azure Designs</a>
+    </div>
+  </div>
+  <!-- </div> -->
+</div>
 <!-- The Modal -->
-<div id="myModal01" class="modal">
+<div id="myModal01" class="modal" >
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close01">&times;</span>
+    <span class="close01" onclick="closePopup()">&times;</span>
     <p>Some text in the Modal..</p>
     <div class="project-preview cocktail_library">
       <div class="overlay">
@@ -44,10 +48,10 @@
 <div id="myModal02" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close02">&times;</span>
-    <p>Some Text...</p>
+    <span class="close02" onclick="closePopup02()">&times;</span>
+    <p>Some Text...<a href="https://www.jocelynburton.com/?l=n" target="_blank">Jocelyn Burton</a><br>
+    </p>
     <div class="project-preview" style="width:100%;">
-      <a href="https://www.jocelynburton.com/?l=n" target="_blank">Jocelyn Burton</a><br>
       <div class="paintings_collection">
         <img src="https://res.cloudinary.com/di2gop0lp/image/upload/v1570637460/Ox_Goblet02_oojxtj.jpg" alt="ox painting">
         <img src="https://res.cloudinary.com/di2gop0lp/image/upload/v1571190736/ox_goblet_cq8m0b.jpg" alt="ox goblet">
@@ -64,7 +68,7 @@
 <div id="myModal03" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close03">&times;</span>
+    <span class="close03" onclick="closePopup03()">&times;</span>
     <p>Some Text...</p>
     <div class="project-preview azuredesigns">
       <div class="overlay">
@@ -81,60 +85,3 @@
     </div>
   </div>
 </div>
-
-<script>
-// Get the modal
-const modal01 = document.getElementById("myModal01");
-const modal02 = document.getElementById("myModal02");
-const modal03 = document.getElementById("myModal03");
-
-// Get the button that opens the modal
-const btn01 = document.getElementById("myBtn01");
-const btn02 = document.getElementById("myBtn02");
-const btn03 = document.getElementById("myBtn03");
-
-// Get the <span> element that closes the modal
-const span01 = document.getElementsByClassName("close01")[0];
-const span02 = document.getElementsByClassName("close02")[0];
-const span03 = document.getElementsByClassName("close03")[0];
-
-// When the user clicks the button, open the modal
-btn01.onclick = function() {
-  modal01.style.display = "block";
-}
-btn02.onclick = function() {
-  modal02.style.display = "block";
-}
-btn03.onclick = function() {
-  modal03.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span01.onclick = function() {
-  modal01.style.display = "none";
-}
-span02.onclick = function() {
-  modal02.style.display = "none";
-}
-span03.onclick = function() {
-  modal03.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal01) {
-    modal01.style.display = "none";
-  }
-}
-
-// window.onclick = function(event) {
-//   if (event.target == modal02) {
-//     modal02.style.display = "none";
-//   }
-// }
-// window.onclick = function(event) {
-//   if (event.target == modal03) {
-//     modal03.style.display = "none";
-//   }
-// }
-</script>

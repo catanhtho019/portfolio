@@ -1,5 +1,6 @@
 .nav-list {
   a {
+  font-family: "Courier";
   font-size: 16px;
   text-decoration: none;
   color: #5588a3;
@@ -7,36 +8,154 @@
 
   a:hover {
   color: #c8e6f5;
+  cursor: pointer;
   }
 }
 
 
-.scroll-down {
-  opacity: 1;
-  -webkit-transition: all .5s ease-in 3s;
-  transition: all 5s ease-in 3s;
+// .scroll-up {
+//   margin-bottom: 10px;
+//   opacity: 1;
+//   -webkit-transition: all .5s ease-in 3s;
+//   transition: all 5s ease-in 3s;
+//   color: #5588a3;
+//   text-decoration: none;
+//   cursor: pointer;
+
+//     .scroll-up:hover {
+//     color: #c8e6f5;
+//     cursor: pointer;
+//   }
+// }
+
+// .scroll-down {
+//   position: absolute;
+//   top: 15px;
+//   left: 90%;
+//   margin-left: -16px;
+//   display: block;
+//   width: 32px;
+//   height: 32px;
+//   background-size: 14px auto;
+//   border-radius: 50%;
+//   z-index: 2;
+//   -webkit-animation: bounce 2s infinite 2s;
+//   animation: bounce 2s infinite 2s;
+//   -webkit-transition: all .2s ease-in;
+//   transition: all .2s ease-in;
+//   color: #5588a3;
+//   text-decoration: none;
+//   cursor: pointer;
+// }
+
+.arrows-up {
+      transform: translate(50%,50%);
+      position: relative;
+      width: 20px;
+      height: 20px;
+      border-bottom: 5px solid #5588a3;
+      border-right: 5px solid #5588a3;
+      transform: rotate(225deg);
+      display: block;
+      margin: 30px auto;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
 }
 
-.scroll-down {
-  position: absolute;
-  top: 15px;
-  left: 90%;
-  margin-left: -16px;
-  display: block;
-  width: 32px;
-  height: 32px;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-  color: #5588a3;
-  text-decoration: none;
-  cursor: pointer;
+.arrows-down {
+    position: relative;
+    top: 18%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+  & span {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-bottom: 5px solid #5588a3;
+      border-right: 5px solid #5588a3;
+      transform: rotate(45deg);
+      margin: -10px;
+      cursor: pointer;
+  }
+      & span:nth-child(2){
+          opacity: 0;
+          cursor: pointer;
+  }
+      & span:nth-child(3){
+          opacity: 0;
+          cursor: pointer;
+  }
 }
 
-.scroll-down:hover {
-  color: #c8e6f5;
+.arrows-down:hover  {
+    position: relative;
+    top: 18%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+
+&:hover span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #5588a3;
+    border-right: 5px solid #5588a3;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+    cursor: pointer;
 }
+&:hover span:nth-child(2){
+    opacity: 1;
+    animation-delay: -0.2s;
+     cursor: pointer;
+}
+&:hover span:nth-child(3){
+   opacity: 1;
+    animation-delay: -0.4s;
+     cursor: pointer;
+}
+  @keyframes animate {
+    0%{
+        opacity: 0;
+        cursor: pointer;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+        cursor: pointer;
+    }
+    100%{
+        opacity: 0;
+        cursor: pointer;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+  }
+}
+
+// .scroll-down {
+//   position: relative;
+//   top: 25vh;
+//   // left: 50%;
+//   // margin-left: -16px;
+//   display: block;
+//   width: 32px;
+//   height: 32px;
+//   background-size: 14px auto;
+//   border-radius: 50%;
+//   z-index: 2;
+//   -webkit-animation: bounce 2s infinite 2s;
+//   animation: bounce 2s infinite 2s;
+//   -webkit-transition: all .2s ease-in;
+//   transition: all .2s ease-in;
+//   color: #5588a3;
+//   text-decoration: none;
+//   cursor: pointer;
+
+//   .scroll-down:hover {
+//     color: #c8e6f5;
+//   }
+// }
+

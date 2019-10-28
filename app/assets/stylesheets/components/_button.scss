@@ -6,11 +6,6 @@
   font-weight: bold;
 }
 
-
-.social-media {
-  color:#374054;
-}
-
 .CV_download {
   border: 1px solid white;
   border-radius: 4px;
@@ -23,3 +18,22 @@
   }
 }
 
+.social-media {
+  color:#374054;
+  font-size: 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}

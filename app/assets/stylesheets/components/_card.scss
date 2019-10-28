@@ -32,23 +32,74 @@
   }
 }
 
+.project-cards {
+  // position: relative;
+  // top: 0;
+  // left: 0;
+  // z-index:-1;
+  // width: 100%;
+}
+.cards-overlay {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  width: 100%;
+  height: 100vh;
+  z-index:1;
+}
+
+.project-cards .project-card:nth-child(1) {
+      background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1570578263/cocktail_library_hautgj.png");
+    background-size: cover;
+}
+
+.project-cards .project-card:nth-child(2) {
+      background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1570637460/Ox_Goblet02_oojxtj.jpg");
+    background-size: cover;
+    background-position: bottom 44% right 90%;
+}
+
+.project-cards .project-card:nth-child(3) {
+      background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1571194128/azuredesign_cgmf2c.png");
+    background-size: cover;
+    background-position: bottom 20% right 60%;
+
+}
+
 .project-card {
 height: 33vh;
 width: 100vw;
-background-color: pink;
 text-align: center;
 font-size: 50px;
 justify-content: center;
+z-index: 0;
 }
 
 .project-card:hover {
-background: #f6b93b;
-border-color: #f6b93b !important;
-transition: all 0.4s ease 0s;
+background: #356f89;
+// border-color: #356f89;
+transition: all 0.4s ease 1s;
 }
 
 .project-title {
-  color: #3D3830;
+  font-family: monospace;
+  color: #fff;
   margin: 0;
   position: relative;
   top: 50%;
@@ -61,6 +112,10 @@ transition: all 0.4s ease 0s;
   }
   :hover {
     color: #ffffff;
+    opacity:0.7;
   }
 }
 
+body {
+  margin:0;
+}

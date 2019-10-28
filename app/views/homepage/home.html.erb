@@ -7,13 +7,20 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
   <body>
-    <a onclick="scroll_down()" class="scroll-down">About</a>
     <div class="hero-banner">
       <div class="banner-content">
-        <h1>Catherine Nguyen-Cat</h1>
-        <h2>Full-stack Developer</h2>
-        <a href="https://res.cloudinary.com/di2gop0lp/image/upload/v1570455755/Catherine_Nguyen-Cat_CV_syyed9.pdf" target="_blank" class="CV_download">View CV</a>
-
+        <div class="css-typing">
+          <h1>Catherine</h1>
+          <h1>Nguyen-Cat</h1>
+          <h1>Fullstack Developer</h1>
+        <a href="https://res.cloudinary.com/di2gop0lp/image/upload/v1571877660/Catherine_Nguyen-Cat_CV_ulmepq.pdf" target="_blank" class="CV_download">View CV</a>
+        </div>
+        <!-- <a onclick="scrollDown()" class="scroll-down" id="topPage">About</a> -->
+        <div class="arrows-down" onclick="scrollDown()">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
       </div>
     </div>
       <div id="about">
@@ -60,18 +67,10 @@
                   </a>
                 </li>
               </ul>
+              <div class="arrows-up" onclick="scrollUp()"></div>
             </div>
-        </div>
+            <!-- <a onclick="scrollUp()" class="scroll-up">top</a> -->
+          </div>
       </div>
   </body>
 </html>
-
-
-<script>
-      function scroll_down()
-    {
-      const aboutBtn = document.getElementById("about");
-      aboutBtn.scrollIntoView({behavior: "smooth"});
-    }
-</script>
-

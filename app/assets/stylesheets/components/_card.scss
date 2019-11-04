@@ -92,9 +92,11 @@ z-index: 0;
 }
 
 .project-card:hover {
-background: #356f89;
-// border-color: #356f89;
-transition: all 0.4s ease 1s;
+  background: #356f89;
+  opacity: 0.9;
+  transition: all 0.3s ease .7s;
+  transform: scale(1.1);
+
 }
 
 .project-title {

@@ -26,6 +26,12 @@
   height:80vh;
   border-radius:5px;
   overflow: scroll;
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #5588a3;
+    line-height: 30px;
+  }
 }
 
 /* The Close Button */
@@ -105,6 +111,9 @@
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
+  a {
+    color: white;
+  }
 }
 
 .preview-text {
@@ -136,3 +145,4 @@
     width: 55vw;
   }
 }
+

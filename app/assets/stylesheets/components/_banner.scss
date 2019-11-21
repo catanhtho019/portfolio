@@ -30,6 +30,12 @@
     }
 }
 
+@media (max-width: 540px) {
+.banner-content {
+  height: 100vh;
+  }
+}
+
 .css-typing {
   background-color: black;
   border-radius: 5px;
@@ -39,6 +45,14 @@
   padding-right: 40px;
   padding-left: 40px;
 }
+
+@media (max-width: 540px) {
+.css-typing {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
 .css-typing h1 {
   border-right: .1em solid white;
   font-family: "Courier";
@@ -54,6 +68,12 @@
   animation-fill-mode: forwards;
 }
 
+@media (max-width: 540px) {
+.css-typing h1:nth-child(1) {
+  font-size: 60px;
+  }
+}
+
 .css-typing h1:nth-child(2) {
   width: 100%;
   margin-top: 20px;
@@ -64,6 +84,12 @@
   animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+@media (max-width: 540px) {
+.css-typing h1:nth-child(2) {
+  font-size: 60px;
+  }
 }
 
 .css-typing h1:nth-child(3) {

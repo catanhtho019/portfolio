@@ -1,4 +1,4 @@
-/* The Modal (background) */
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -22,7 +22,7 @@
   padding: 25px;
   padding-bottom: 25px;
   border: 1px solid #888;
-  width: 70vw;
+  width: 80vw;
   height:80vh;
   border-radius:5px;
   overflow: scroll;
@@ -31,6 +31,7 @@
     font-weight: 600;
     color: #5588a3;
     line-height: 30px;
+    font-size: 35px;
   }
   a:hover {
   opacity: 0.6;
@@ -188,6 +189,5 @@
 @media (max-width: 576px)  {
   .project-preview img:nth-child(5) {
     width: 380px;
-    height: 60%;
   }
 }

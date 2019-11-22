@@ -1,4 +1,7 @@
 .nav-list {
+    height:30px;
+  }
+.nav-list {
   a {
   font-family: "Courier";
   font-size: 16px;
@@ -11,42 +14,11 @@
   cursor: pointer;
   }
 }
-
-
-// .scroll-up {
-//   margin-bottom: 10px;
-//   opacity: 1;
-//   -webkit-transition: all .5s ease-in 3s;
-//   transition: all 5s ease-in 3s;
-//   color: #5588a3;
-//   text-decoration: none;
-//   cursor: pointer;
-
-//     .scroll-up:hover {
-//     color: #c8e6f5;
-//     cursor: pointer;
-//   }
-// }
-
-// .scroll-down {
-//   position: absolute;
-//   top: 15px;
-//   left: 90%;
-//   margin-left: -16px;
-//   display: block;
-//   width: 32px;
-//   height: 32px;
-//   background-size: 14px auto;
-//   border-radius: 50%;
-//   z-index: 2;
-//   -webkit-animation: bounce 2s infinite 2s;
-//   animation: bounce 2s infinite 2s;
-//   -webkit-transition: all .2s ease-in;
-//   transition: all .2s ease-in;
-//   color: #5588a3;
-//   text-decoration: none;
-//   cursor: pointer;
-// }
+@media (max-width: 576px) {
+  .nav-list li {
+    display: none;
+  }
+}
 
 .arrows-up {
       transform: translate(50%,50%);
@@ -134,28 +106,4 @@
     }
   }
 }
-
-// .scroll-down {
-//   position: relative;
-//   top: 25vh;
-//   // left: 50%;
-//   // margin-left: -16px;
-//   display: block;
-//   width: 32px;
-//   height: 32px;
-//   background-size: 14px auto;
-//   border-radius: 50%;
-//   z-index: 2;
-//   -webkit-animation: bounce 2s infinite 2s;
-//   animation: bounce 2s infinite 2s;
-//   -webkit-transition: all .2s ease-in;
-//   transition: all .2s ease-in;
-//   color: #5588a3;
-//   text-decoration: none;
-//   cursor: pointer;
-
-//   .scroll-down:hover {
-//     color: #c8e6f5;
-//   }
-// }
 

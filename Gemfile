@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '2.5.3'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -24,6 +24,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 gem 'font-awesome-sass', '~> 5.6.1'
+gem 'jquery-rails'
 # gem 'bootstrap', '~> 4.0.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -38,7 +39,7 @@ gem 'font-awesome-sass', '~> 5.6.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'cloudinary', '~> 1.9.1'
-
+gem 'bootstrap', '~> 4.0.0'
 gem 'dotenv-rails', groups: [:development, :test]
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

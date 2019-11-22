@@ -1,0 +1,63 @@
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:30px;
+  margin: 10px;
+  padding:0px 15px 0px 15px;
+  color: #394345;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+  // width: 50px;
+  // height: 50px;
+  // border-radius: 50%;
+  // box-shadow: 3px 3px 4px #E6E7E7;
+  // background-color: #F7F7F7;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  margin: 10px;
+  padding:0px 15px 0px 15px;
+  color: #394345;
+  border:0;
+  // width: 50px;
+  // height: 50px;
+  // border-radius: 50%;
+  font-size:3em;
+  line-height:40px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+  // box-shadow: 3px 3px 4px #E6E7E7;
+  // background-color: #F7F7F7;
+}
+.menu{z-index:1000000; font-size:0.8em; width:100%; background-color: #fff; position:absolute; text-align:center; font-size:16px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none; display: list-item;}
+.menu li {display: block; font-family: "Courier"; text-align: left; padding:15px 0 15px 20px; color: #5588a3; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block; color:#ffffff; padding:15px 0 15px 20px; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px;}
+.menu ul li a:hover { text-decoration:none;}
+.menu a{text-decoration:none; color:#5588a3;}
+.menu a:hover{text-decoration:none; opacity:0.6}
+
+
+@media (max-width: 1900px) and (min-width: 1068px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (max-width: 1068px) and (min-width: 576px) {
+  .burger {
+    display: none;
+  }
+}

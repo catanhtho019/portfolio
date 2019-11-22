@@ -10,7 +10,6 @@ body {
   }
 
   .container {
-    padding: 10px;
     width: 600px;
     margin: auto;
     min-height: 100vh;
@@ -53,12 +52,6 @@ body {
 }
 
 .project-cards .project-card:nth-child(1) {
-    // background:
-    // linear-gradient(
-    //   rgba(0, 0, 0, 0.8),
-    //   rgba(0, 0, 0, 0.8)
-    // ),
-    // url("https://res.cloudinary.com/di2gop0lp/image/upload/v1570578263/cocktail_library_hautgj.png");
     background:
     linear-gradient(
       rgba(0, 0, 0, 0.8),
@@ -69,12 +62,6 @@ body {
 }
 
 .project-cards .project-card:nth-child(2) {
-    // background:
-    // linear-gradient(
-    //   rgba(0, 0, 0, 0.8),
-    //   rgba(0, 0, 0, 0.8)
-    // ),
-    // url("https://res.cloudinary.com/di2gop0lp/image/upload/v1570637460/Ox_Goblet02_oojxtj.jpg");
     background:
     linear-gradient(
       rgba(0, 0, 0, 0.8),
@@ -86,12 +73,6 @@ body {
 }
 
 .project-cards .project-card:nth-child(3) {
-    // background:
-    // linear-gradient(
-    //   rgba(0, 0, 0, 0.8),
-    //   rgba(0, 0, 0, 0.8)
-    // ),
-    // url("https://res.cloudinary.com/di2gop0lp/image/upload/v1571194128/azuredesign_cgmf2c.png");
     background:
     linear-gradient(
       rgba(0, 0, 0, 0.8),
@@ -121,15 +102,16 @@ z-index: 0;
 }
 
 .project-title {
-  font-family: monospace;
+  // font-family: monospace;
   color: #fff;
   margin: 0;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: bold;
+  font-weight: 600;
   a {
+  position:relative;
   text-decoration: none;
   cursor: pointer;
   }
@@ -161,5 +143,64 @@ z-index: 0;
 
 .project-preview:hover .overlay {
   opacity: 1;
+}
+
+.experiment_cards {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  padding-top:20px;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .experiment_cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+a.experiment_card {
+  height: 300px;
+  width: 40vw;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+  background-color: #fff;
+  color: #fff;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.6
+  }
+}
+
+.experiment_card_title {
+  padding-top: 15px;
+  font-weight: 600;
+  font-size: 30px;
+  text-shadow: 2px 1px #757575;
+}
+
+ a.experiment_card:nth-child(1) {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/c_scale,w_865/v1574449064/Geocoder_app_ktwvcc.png");
+    background-size: cover;
+    background-position: bottom 20% right 60%;
+}
+ a.experiment_card:nth-child(2) {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/c_scale,w_866/v1574449074/weather_app_skcrmq.png");
+    background-size: cover;
+    background-position: bottom 80% right 60%;
 }
 

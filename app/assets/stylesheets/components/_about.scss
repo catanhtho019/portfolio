@@ -1,6 +1,7 @@
 #about {
   font-family: "Courier";
   height:100vh;
+  padding-top: 30px;
 }
 
 @media (max-width: 540px) {
@@ -28,13 +29,11 @@
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-  padding-top: 30px;
-  // padding: 20px;
 }
 
 .skills {
@@ -57,7 +56,6 @@
     }
   }
 }
-
 // .skills li {
 //     display: inline-block;
 //     margin: 7px;
@@ -69,7 +67,6 @@
 //     cursor: default;
 //     font-size: 1.2em;
 // }
-
 
 .list-inline {
     display: block;

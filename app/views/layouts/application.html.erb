@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cat's Portfolio</title>
+    <title>Catherine Nguyen-Cat</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
   <header>
     <nav class="top-nav">
+      <div class="burger">
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+      </div>
       <ul class="nav-list">
         <li>
           <a href="/" class="nav-link">Home</a>
@@ -13,14 +17,23 @@
         <li>
           <a href="projects" class="nav-link">Projects</a>
         </li>
-      <!--     <li>
+          <li>
           <a href="experiments" class="nav-link">Experiments</a>
-        </li> -->
-       <!--  <li>
-          <a href="about" class="nav-about">About</a>
-        </li> -->
+        </li>
       </ul>
-
+      <div class="menu">
+        <ul class="nav_hamburger">
+          <li>
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="projects" class="nav-link">Projects</a>
+          </li>
+            <li>
+            <a href="experiments" class="nav-link">Experiments</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
       <%= stylesheet_link_tag 'application', media: 'all' %>

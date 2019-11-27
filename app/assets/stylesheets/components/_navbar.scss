@@ -179,10 +179,13 @@ $blackColor: #5588a3;;
             text-decoration: none;
             text-transform: uppercase;
             color: $blackColor;
-            font-weight: 700;
+            font-weight: 600;
             font-family: sans-serif;
             display: block;
             // padding: 30px;
+            &:hover {
+              opacity: 0.5;
+            }
           }
         }
       }
@@ -199,4 +202,9 @@ $blackColor: #5588a3;;
     }
 
 
+@media (max-width: 576px) {
+input:checked ~ nav {
+    height: 20%;
 
+  }
+}

@@ -37,9 +37,9 @@ gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'bootstrap', '~> 4.0.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'cloudinary', '~> 1.9.1'
-gem 'bootstrap', '~> 4.0.0'
 gem 'dotenv-rails', groups: [:development, :test]
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

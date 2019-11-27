@@ -5,11 +5,37 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
   <header>
-    <nav class="top-nav">
-      <div class="burger">
+
+<input id="burger" type="checkbox" />
+
+<label for="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<nav>
+  <ul class="burger_menu">
+    <li>
+      <a href="/" class="nav-link">Home</a>
+    </li>
+    <li>
+      <a href="projects" class="nav-link">Projects</a>
+    </li>
+    <li>
+      <a href="experiments" class="nav-link">Experiments</a>
+    </li>
+  </ul>
+</nav>
+<!--/.Navbar-->
+    <!-- <nav class="top-nav"> -->
+<!--       <div class="burger">
         <button class="hamburger">&#9776;</button>
         <button class="cross">&#735;</button>
-      </div>
+      </div> -->
+
+
+<!--
       <ul class="nav-list">
         <li>
           <a href="/" class="nav-link">Home</a>
@@ -20,8 +46,9 @@
           <li>
           <a href="experiments" class="nav-link">Experiments</a>
         </li>
-      </ul>
-      <div class="menu">
+      </ul> -->
+
+<!--       <div class="menu">
         <ul class="nav_hamburger">
           <li>
             <a href="/" class="nav-link">Home</a>
@@ -34,11 +61,12 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
   </header>
       <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "application" %>
+
   </head>
 
   <body>

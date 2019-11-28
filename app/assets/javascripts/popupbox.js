@@ -1,9 +1,9 @@
-const popup = (content) => {
+const popup01 = (content) => {
   const modal01 = document.getElementById("myModal01");
   document.getElementById("myBtn01")
   modal01.style.display = "block";
 };
-const closePopup = (content) => {
+const closePopup01 = (content) => {
   document.querySelector(".close01");
   const modal01 = document.getElementById("myModal01");
   modal01.style.display = "none";

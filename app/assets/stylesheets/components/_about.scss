@@ -116,8 +116,14 @@
     opacity:0.25;
   }
   .contact:before{
-    height:150px;
+    height:165px;
     opacity:0.25;
+  }
+}
+
+@media (max-width: 1068px) and (min-width: 576px) {
+  #about:before{
+    height: 865px;
   }
 }
 

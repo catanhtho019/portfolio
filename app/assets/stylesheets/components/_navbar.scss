@@ -107,12 +107,19 @@
   }
 }
 
+header{
+  background: #fff;
+  // background: #101319;
+  padding-bottom: 2px;
+}
   a.nav-link{
     padding: 0;
     color:#5588a3;
-    font-weight: 700;
+    // color:#B7BABB;
+    font-weight: 400;
     &:hover {
-      color: #5588a3;
+      color:#5588a3;
+      // color: #B7BABB;
       opacity: 0.5;
     }
   }

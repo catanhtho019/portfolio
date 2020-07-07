@@ -37,3 +37,26 @@ ul {
   display: flex;
   justify-content: space-around;
 }
+
+
+.close01,
+.close02,
+.close03,
+.close04,
+.close05 {
+  cursor: pointer;
+  color:#000;
+  font-size:25px;
+  font-weight: bold;
+  border-radius: 10%;
+  position:fixed;
+}
+
+.close01:hover,
+.close02:hover,
+.close03:hover,
+.close04:hover,
+.close05:hover
+  {
+    opacity:0.7;
+  }

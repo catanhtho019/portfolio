@@ -36,3 +36,25 @@ const closePopup03 = (content) => {
   const modal03 = document.getElementById("myModal03");
   modal03.style.display = "none";
 };
+
+const popup04 = (content) => {
+  const modal04 = document.getElementById("myModal04");
+  document.getElementById("myBtn04")
+  modal04.style.display = "block";
+};
+const closePopup04 = (content) => {
+  document.querySelector(".close04");
+  const modal04 = document.getElementById("myModal04");
+  modal04.style.display = "none";
+};
+
+const popup05 = (content) => {
+  const modal05 = document.getElementById("myModal05");
+  document.getElementById("myBtn05")
+  modal05.style.display = "block";
+};
+const closePopup05 = (content) => {
+  document.querySelector(".close05");
+  const modal05 = document.getElementById("myModal05");
+  modal05.style.display = "none";
+};

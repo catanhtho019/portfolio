@@ -1,5 +1,21 @@
 body {
   margin:0;
+  font-family:"Courier";
+  // height:100%;
+}
+.web-cards h1{
+ color:#fff;
+ font-family:"Courier";
+ font-size:2.5rem;
+ padding-top:55px;
+ margin-left:20px;
+}
+.graphic-cards h1{
+  color:#fff;
+  font-family:"Courier";
+  font-size:2.5rem;
+  margin-top: 20px;
+  margin-left: 20px;
 }
   .card {
     background-color: white;
@@ -8,7 +24,10 @@ body {
     padding: 30px;
     margin-top: 20px;
   }
-
+.project-container{
+  background: #000;
+  // height:100vh;
+}
   .container {
     width: 600px;
     margin: auto;
@@ -35,12 +54,25 @@ body {
 }
 
 .project-cards {
+  display:flex;
+  justify-content:center;
+  flex-direction:row;
   // position: relative;
   // top: 0;
   // left: 0;
   // z-index:-1;
   // width: 100%;
 }
+
+@media only screen and (max-width:770px){
+  .project-cards {
+    display:block;
+  }
+  .project-card{
+    height:18vh;
+  }
+}
+
 .cards-overlay {
   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
   width: 100%;
@@ -48,32 +80,57 @@ body {
   z-index:1;
 }
 
-.project-cards .project-card:nth-child(1) {
+.web-cards .project-card:nth-child(1) {
     background:
     linear-gradient(
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
     ),
-    url("https://res.cloudinary.com/di2gop0lp/image/upload/c_scale,w_834/v1570578263/cocktail_library_hautgj.png");
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1593555189/robert-walters.png");
     background-size: cover;
+    background-position-x: -350px;
 }
 
-.project-cards .project-card:nth-child(2) {
+.web-cards .project-card:nth-child(2) {
     background:
     linear-gradient(
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
     ),
-    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1571190736/ox_goblet_cq8m0b.jpg");
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/c_scale,w_834/v1570578263/cocktail_library_hautgj.png");
     background-size: cover;
     background-position: -40px 58% ;
 }
 
-.project-cards .project-card:nth-child(3) {
+.graphic-cards .project-card:nth-child(1) {
     background:
     linear-gradient(
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1593552297/Sea_Life_shapes_whale.jpg");
+    background-size: cover;
+    background-position: bottom 20% right 60%;
+
+}
+
+.graphic-cards .project-card:nth-child(2) {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1571190736/ox_goblet.jpg");
+    background-size: cover;
+    background-position: bottom 20% right 60%;
+
+}
+
+.graphic-cards .project-card:nth-child(3) {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
     ),
     url("https://res.cloudinary.com/di2gop0lp/image/upload/c_scale,w_1249/v1571194128/azuredesign_cgmf2c.png");
     background-size: cover;
@@ -82,12 +139,18 @@ body {
 }
 
 .project-card {
-height: 33vh;
-width: 100vw;
-text-align: center;
-font-size: 50px;
-justify-content: center;
-z-index: 0;
+  height: 33vh;
+  width: 450px;
+  // margin:10px;
+  margin-bottom:20px;
+  margin-top:10px;
+  margin-right: auto;
+  margin-left:auto;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 20px;
+  justify-content: center;
+  z-index: 0;
 }
 
 .project-card:hover {
@@ -95,7 +158,23 @@ z-index: 0;
   opacity: 0.9;
   transition: all 0.3s ease .7s;
   transform: scale(1.05);
+  // margin-bottom:10px;
 
+}
+@media (max-width: 576px) {
+  .project-card {
+    height: 33vh;
+    width: 90%;
+    margin-bottom:0px;
+    margin-top:10px;
+    margin-right: auto;
+    margin-left:auto;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    z-index: 0;
+  }
 }
 
 .project-title {
@@ -105,7 +184,8 @@ z-index: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: 600;
+  font-weight: 500;
+  text-shadow: 2px 4px 2px #b7babb;
   a {
   position:relative;
   text-decoration: none;
@@ -141,18 +221,29 @@ z-index: 0;
   opacity: 1;
 }
 
+.cocktail-cards{
+  display:flex;
+  width:50%;
+}
+@media (max-width: 576px) {
+  .cocktail-cards {
+    display:block;
+    width:100%;
+  }
+}
+
 .experiment_cards {
   display: flex;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   padding-top:30px;
   height: auto;
-  margin-top: 25px;
 }
 
 @media (max-width: 576px) {
   .experiment_cards {
     grid-template-columns: 1fr;
+    margin-top:40px;
   }
 }
 

@@ -13,7 +13,11 @@
   }
 // }
 
-
+@media (max-width: 1068px) and (min-width: 541px) {
+  #about {
+  height:100vh;
+  }
+}
 .about-text {
   color: #40677c;
   text-align: center;

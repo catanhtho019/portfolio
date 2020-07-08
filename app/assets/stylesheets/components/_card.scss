@@ -232,6 +232,10 @@ body {
   }
 }
 
+.saved-jobs{
+  display:flex;
+}
+
 .experiment_cards {
   display: flex;
   grid-template-columns: repeat(2, 1fr);

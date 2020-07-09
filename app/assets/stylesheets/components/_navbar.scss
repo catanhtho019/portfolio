@@ -134,7 +134,7 @@ header{
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
 $blackColor: #5588a3;;
 
     input + label {
@@ -229,7 +229,7 @@ $blackColor: #5588a3;;
   }
 
 
-@media (max-width: 576px) {
+@media (max-width: 540px) {
   input:checked ~ nav {
       height: 20%;
 

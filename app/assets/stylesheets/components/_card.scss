@@ -10,6 +10,11 @@ body {
  padding-top:55px;
  margin-left:20px;
 }
+@media (max-width: 540px) {
+  .web-cards h1{
+    margin-top:20px;
+  }
+}
 .graphic-cards h1{
   color:#fff;
   font-family:"Courier";

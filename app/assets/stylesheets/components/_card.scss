@@ -249,6 +249,11 @@ body {
   display:flex;
 }
 
+@media (min-width: 541px) {
+  .experiment_container {
+    height: 100vh;
+  }
+}
 .experiment_cards {
   display: flex;
   grid-template-columns: repeat(2, 1fr);
@@ -324,6 +329,16 @@ a.experiment_card {
       rgba(0, 0, 0, 0.5)
     ),
     url("https://res.cloudinary.com/di2gop0lp/image/upload/c_scale,w_866/v1574449074/weather_app_skcrmq.png");
+    background-size: cover;
+    background-position: bottom 80% right 60%;
+}
+ a.experiment_card:nth-child(3) {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1594849481/form-validation.png");
     background-size: cover;
     background-position: bottom 80% right 60%;
 }

@@ -249,29 +249,30 @@ body {
   display:flex;
 }
 
-@media (min-width: 541px) {
+@media (min-width: 720px) {
   .experiment_container {
     height: 100vh;
   }
-}
-.experiment_cards {
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  padding-top:40px;
-  height: auto;
-}
-@media (max-width: 720px) {
+
   .experiment_cards {
-    padding-top:80px;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding-top:40px;
+    height: auto;
+
   }
 }
 
-@media (max-width: 540px) {
+
+
+@media (max-width: 720px) {
   .experiment_cards {
-    grid-template-columns: 0fr;
-    margin-top:40px;
     display:grid;
+    grid-template-columns: 0fr;
+    justify-content: center;
+    padding-top:80px;
+    margin-top:40px;
   }
   a.experiment_card {
     width:80vw!important;
@@ -304,9 +305,10 @@ a.experiment_card {
   font-weight: 600;
   font-size: 28px;
   text-shadow: 2px 1px #757575;
+  color:#fff;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .experiment_card_title {
     font-size: 24px;
   }
@@ -348,9 +350,10 @@ a.experiment_card {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1595295655/html_email.png");
-    background-size: cover;
-    background-position: bottom 80% right 60%;
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1595295655/promo_email01.png");
+    background-size: 130%;
+    background-position: bottom 90% right 60%;
+    cursor: pointer;
 }
 
 

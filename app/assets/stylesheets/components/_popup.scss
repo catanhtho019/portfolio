@@ -77,9 +77,10 @@
 
 .email_img01{
   background-image: url("https://res.cloudinary.com/di2gop0lp/image/upload/v1595295655/promo_email01.png");
-  background-size: cover;
-  background-position: center;
-  height: 50%;
+  background-size: 130%;
+  // background-position: center;
+  background-position: bottom 75% right 50%;
+  height: 35%;
   width: 35%;
   float:left;
   margin-left:30px;
@@ -88,7 +89,7 @@
   background-image: url("https://res.cloudinary.com/di2gop0lp/image/upload/v1595458500/promo_email02_tjpxxl.png");
   background-size: cover;
   background-position: center;
-  height: 50%;
+  height: 35%;
   width: 35%;
   float:left;
   margin-left:30px;

@@ -67,14 +67,17 @@ body {
 }
 
 .project-cards {
-  display:flex;
-  justify-content:center;
-  flex-direction:row;
+  // display:flex;
+  // justify-content:center;
+  // flex-direction:row;
+
   // position: relative;
   // top: 0;
   // left: 0;
   // z-index:-1;
   // width: 100%;
+display:grid;
+grid-template-columns: 1fr 1fr;
 }
 
 @media only screen and (max-width:720px){
@@ -101,7 +104,9 @@ body {
     ),
     url("https://res.cloudinary.com/di2gop0lp/image/upload/v1593555189/robert-walters.png");
     background-size: cover;
-    background-position-x: -350px;
+    // background-position-x: -350px;
+    background-position: bottom 50% right 60%;
+
 }
 
 .web-cards .project-card:nth-child(2) {
@@ -123,7 +128,7 @@ body {
     ),
     url("https://res.cloudinary.com/di2gop0lp/image/upload/v1593552297/Sea_Life_shapes_whale.jpg");
     background-size: cover;
-    background-position: bottom 20% right 60%;
+    background-position: bottom 50% right 60%;
 
 }
 
@@ -133,27 +138,28 @@ body {
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.4)
     ),
-    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1571190736/ox_goblet.jpg");
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/c_scale,w_1249/v1571194128/azuredesign_cgmf2c.png");
     background-size: cover;
-    background-position: bottom 20% right 60%;
+    background-position: bottom 50% right 60%;
 
 }
-
 .graphic-cards .project-card:nth-child(3) {
     background:
     linear-gradient(
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.4)
     ),
-    url("https://res.cloudinary.com/di2gop0lp/image/upload/c_scale,w_1249/v1571194128/azuredesign_cgmf2c.png");
+    url("https://res.cloudinary.com/di2gop0lp/image/upload/v1571190736/ox_goblet.jpg");
     background-size: cover;
-    background-position: bottom 20% right 60%;
+    background-position: bottom 35% right 60%;
 
 }
 
+
 .project-card {
   height: 33vh;
-  width: 450px;
+  // width: 450px;
+  width: 80%;
   // margin:10px;
   margin-bottom:20px;
   margin-top:10px;

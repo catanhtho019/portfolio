@@ -58,3 +58,24 @@ const closePopup05 = (content) => {
   const modal05 = document.getElementById("myModal05");
   modal05.style.display = "none";
 };
+
+const popup06 = (content) => {
+  const modal06 = document.getElementById("myModal06");
+  document.getElementById("myBtn06")
+  modal06.style.display = "block";
+};
+const closePopup06 = (content) => {
+  document.querySelector(".close06");
+  const modal06 = document.getElementById("myModal06");
+  modal06.style.display = "none";
+};
+const popup07 = (content) => {
+  const modal07 = document.getElementById("myModal07");
+  document.getElementById("myBtn07")
+  modal07.style.display = "block";
+};
+const closePopup07 = (content) => {
+  document.querySelector(".close07");
+  const modal07 = document.getElementById("myModal07");
+  modal07.style.display = "none";
+};

@@ -141,6 +141,9 @@ body {
   object-fit: contain!important;
 }
 
+.carousel-item{
+  transition: transform 0.2s ease, -webkit-transform 0.6s ease;
+}
 
 // /* Container */
 

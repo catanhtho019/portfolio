@@ -4,6 +4,7 @@
   // height:100vh;
   padding-top: 30px;
   position:relative;
+  background:#fff;
 
   @media (max-width: 540px) {
     #about {
@@ -81,17 +82,7 @@
     }
   }
 }
-// .skills li {
-//     display: inline-block;
-//     margin: 7px;
-//     padding: 5px 10px;
-//     border-radius: 2px;
-//     color: #374054;
-//     background: #e4e4ea;
-//     list-style: none;
-//     cursor: default;
-//     font-size: 1.2em;
-// }
+
 
 .list-inline {
     display: block;
@@ -101,18 +92,10 @@
 }
 
 
-// .contact:before {
-//     background-image: url(https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
-//     opacity: 0;
-//     z-index: -1;
-//     content: "";
-//     position: absolute;
-//     width: 100%;
-//     left: 0;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: center;
-// }
+.contact {
+    padding-bottom:1px;
+
+}
 
 
 @media (max-width: 540px) {

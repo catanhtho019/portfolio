@@ -44,50 +44,65 @@
 
 
 
-<div class="project-container">
 
-  <h1 class="web-cards">Web Development</h1>
-  <div class="web-cards">
-    <div class="content">
-  <!--     <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"> -->
-        <div class="content-overlay"></div>
-        <img class="content-image" src="https://res.cloudinary.com/di2gop0lp/image/upload/v1596142473/robert-walters_small.png">
-        <div class="content-details fadeIn-top">
-          <h3>Robert Walters</h3>
-          <p>UX/html/css</p><br>
-          <a id="myBtn01" onclick="popup01()" class="popup-btn">VIEW</a>
+
+
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Web Development</label>
+  <!-- Tab 2 -->
+  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+  <label for="tab2">Graphic Design</label>
+
+
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+
+    <div class="project-container">
+     <!-- <h1 class="web-cards">Web Development</h1> -->
+      <div class="web-cards">
+        <div class="content">
+      <!--     <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"> -->
+            <div class="content-overlay"></div>
+            <img class="content-image" src="https://res.cloudinary.com/di2gop0lp/image/upload/v1596142473/robert-walters_small.png">
+            <div class="content-details fadeIn-top">
+              <h3>Robert Walters</h3>
+              <p>UX/html/css</p><br>
+              <a id="myBtn01" onclick="popup01()" class="popup-btn">VIEW</a>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
 
-    <div class="content">
-  <!--     <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"> -->
-        <div class="content-overlay"></div>
-        <img class="content-image" src="https://res.cloudinary.com/di2gop0lp/image/upload/v1596142498/cocktail_library_small.png">
-        <div class="content-details fadeIn-top">
-          <h3>Le Wagon</h3>
-          <p>Rails/Ruby/JS/html/css</p><br>
-          <a id="myBtn02" onclick="popup02()" class="popup-btn">VIEW</a>
+        <div class="content">
+      <!--     <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"> -->
+            <div class="content-overlay"></div>
+            <img class="content-image" src="https://res.cloudinary.com/di2gop0lp/image/upload/v1596142498/cocktail_library_small.png">
+            <div class="content-details fadeIn-top">
+              <h3>Le Wagon</h3>
+              <p>Rails/Ruby/JS/html/css</p><br>
+              <a id="myBtn02" onclick="popup02()" class="popup-btn">VIEW</a>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
 
-    <div class="content">
-  <!--     <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"> -->
-        <div class="content-overlay"></div>
-        <img class="content-image" src="https://res.cloudinary.com/di2gop0lp/image/upload/v1596142467/Azure_Designs_small.png">
-        <div class="content-details fadeIn-top">
-          <h3>Azure Designs</h3>
-          <p>Wordpress</p><br>
-          <a id="myBtn03" onclick="popup03()" class="popup-btn">VIEW</a>
+        <div class="content">
+      <!--     <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"> -->
+            <div class="content-overlay"></div>
+            <img class="content-image" src="https://res.cloudinary.com/di2gop0lp/image/upload/v1596142467/Azure_Designs_small.png">
+            <div class="content-details fadeIn-top">
+              <h3>Azure Designs</h3>
+              <p>Wordpress</p><br>
+              <a id="myBtn03" onclick="popup03()" class="popup-btn">VIEW</a>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-
+      </div>
   </div>
-
-  <h1 class="graphic-cards">Graphic Design</h1><br>
-  <div class="graphic-cards">
+  </section>
+    <section id="rauchbier" class="tab-panel">
+    <div class="project-container">
+     <div class="graphic-cards">
     <div class="content">
   <!--     <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"> -->
         <div class="content-overlay"></div>
@@ -123,10 +138,17 @@
         </div>
       </a>
     </div>
-
-
   </div>
 </div>
+    </section>
+
+  </div>
+
+</div>
+
+
+
+
 
 
 

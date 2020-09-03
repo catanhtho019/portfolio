@@ -230,7 +230,8 @@ $blackColor: #5588a3;;
   }
 
 
-@media (max-width: 540px) {
+@media (max-width: 420px) {
+// @media (max-width: 540px) {
   input:checked ~ nav {
       height: 20%;
 

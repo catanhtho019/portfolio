@@ -1,5 +1,5 @@
       function scrollDown() {
-      const aboutBtn = document.querySelector(".contact");
+      const aboutBtn = document.querySelector("#about");
       aboutBtn.scrollIntoView({behavior: "smooth"});
     };
 
